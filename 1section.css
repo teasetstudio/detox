@@ -1,0 +1,131 @@
+.intro-section {
+  background-color: #f0f4f8;
+  padding-top: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-section .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.intro-content {
+  max-width: 55%;
+  height: 100%;
+  padding-right: 20px;
+}
+
+.intro-content h1 {
+  font-size: 3.2em;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.intro-content p {
+  font-size: 1.3em;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+.intro-content > div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.intro-content .contact-item {
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.intro-content .contact-item:not(.consultation-button) {
+  border: 1px solid #e0e0e0;
+}
+
+.intro-content .contact-item:not(.consultation-button):hover {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.intro-content .contact-item img {
+  width: 25px;
+  height: 25px;
+}
+
+.consultation-button {
+  background-color: #2292a1!important;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.consultation-button img {
+  filter: invert(1);
+}
+
+.consultation-button span {
+  color: #fff;
+  font-size: 16px;
+}
+
+.consultation-button:hover {
+  background-color: #367dc9!important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: #fff !important;
+}
+
+.intro-image {
+  max-width: 45%;
+  height: auto;
+  position: relative;
+  right: -20px;
+  bottom: 0;
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .intro-section .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .intro-content {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  
+  .intro-content p {
+    max-width: 100%;
+  }
+  
+  .intro-content > div {
+    justify-content: center;
+  }
+  
+  .intro-image {
+    max-width: 80%;
+    right: 0;
+    margin-top: 0;
+  }
+}
