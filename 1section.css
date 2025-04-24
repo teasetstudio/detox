@@ -1,6 +1,6 @@
 .intro-section {
   background-color: #f0f4f8;
-  padding-top: 80px;
+  padding: 80px 0;
   position: relative;
   overflow: hidden;
 }
@@ -13,9 +13,8 @@
 }
 
 .intro-content {
-  max-width: 55%;
+  max-width: 65%;
   height: 100%;
-  padding-right: 20px;
 }
 
 .intro-content h1 {
@@ -26,19 +25,32 @@
   line-height: 1.2;
 }
 
-.intro-content p {
+.location {
+  font-size: 1.3em;
+  color: #999;
+}
+
+.intro-description {
+  margin: 23px 0;
+}
+
+.intro-description p {
   font-size: 1.3em;
   color: #555;
-  margin-bottom: 30px;
   line-height: 1.5;
+  margin-bottom: 5px;
   max-width: 90%;
 }
 
 .intro-content > div {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
   align-items: center;
+}
+
+div.intro-description p {
+  margin-botton: 5px;
 }
 
 .intro-content .contact-item {
@@ -76,10 +88,6 @@
   gap: 10px;
 }
 
-.consultation-button img {
-  filter: invert(1);
-}
-
 .consultation-button span {
   color: #fff;
   font-size: 16px;
@@ -93,13 +101,12 @@
 }
 
 .intro-image {
-  max-width: 45%;
+  max-width: 43%;
   height: auto;
-  position: relative;
-  right: -20px;
-  bottom: 0;
-  margin-top: -40px;
-  margin-bottom: -40px;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Responsive adjustments */
@@ -107,6 +114,7 @@
   .intro-section .container {
     flex-direction: column;
     text-align: center;
+    padding: 0 20px;
   }
   
   .intro-content {
@@ -124,8 +132,29 @@
   }
   
   .intro-image {
+    position: relative;
     max-width: 80%;
+    margin: 0 auto;
     right: 0;
-    margin-top: 0;
+    top: 0;
+    transform: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro-section {
+    padding: 40px 0;
+  }
+  
+  .intro-content h1 {
+    font-size: 2.5em;
+  }
+  
+  .intro-description p {
+    font-size: 1.1em;
+  }
+  
+  .intro-image {
+    max-width: 100%;
   }
 }

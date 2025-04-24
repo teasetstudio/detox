@@ -1,0 +1,102 @@
+.prices-section {
+  padding: 0 0 80px;
+  background-color: #fff;
+}
+
+.prices-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.prices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.price-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.price-card h3 {
+  color: #2292a1;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.price-card .price {
+  font-size: 2em;
+  color: #333;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.price-card .price span {
+  font-size: 0.5em;
+  color: #666;
+  font-weight: 400;
+}
+
+.price-card .description {
+  color: #666;
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.price-card .contact-button {
+  background-color: #2292a1;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: auto;
+}
+
+.price-card .contact-button:hover {
+  background-color: #367dc9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .prices-section {
+    padding: 60px 0;
+  }
+  
+  .prices-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .prices-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .price-card {
+    padding: 25px;
+  }
+} 
