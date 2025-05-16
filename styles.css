@@ -90,3 +90,192 @@
     }
 }
 
+/* Treatment Methods Section */
+.treatment-methods {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+}
+
+.treatment-methods::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4a90e2, #50c878);
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.method-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.method-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: #f0f7ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.method-icon i {
+    font-size: 30px;
+    color: #4a90e2;
+}
+
+.method-card h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.method-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .treatment-methods {
+        padding: 50px 0;
+    }
+    
+    .methods-grid {
+        gap: 20px;
+    }
+    
+    .method-card {
+        padding: 20px;
+    }
+    
+    .method-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .method-icon i {
+        font-size: 25px;
+    }
+}
+
+/* Client Appreciation Section */
+.client-appreciation {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.client-appreciation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #50c878, #4a90e2);
+}
+
+.client-appreciation p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .client-appreciation {
+        padding: 40px 0;
+    }
+    
+    .client-appreciation p {
+        font-size: 1.4rem;
+    }
+}
+
+/* Motivational Section */
+.motivational-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.motivational-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4a90e2, #50c878);
+}
+
+.motivational-section p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .motivational-section {
+        padding: 40px 0;
+    }
+    
+    .motivational-section p {
+        font-size: 1.4rem;
+    }
+}
+
+/* Final Motivational Section */
+.final-motivation {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+    margin-bottom: 0;
+}
+
+.final-motivation::before {
+    background: linear-gradient(90deg, #50c878, #4a90e2);
+}
+
+.final-motivation p {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .final-motivation p {
+        font-size: 1.5rem;
+    }
+}
+
