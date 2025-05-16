@@ -1,0 +1,160 @@
+.infusion-therapy {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.infusion-therapy h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.therapy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.therapy-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.therapy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.therapy-icon {
+    width: 60px;
+    height: 60px;
+    background: #f0f7ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.therapy-icon i {
+    font-size: 24px;
+    color: #4a90e2;
+}
+
+.therapy-card h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.therapy-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contact-block {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-block h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.contact-block p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: #4a90e2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #357abd;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-button i {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .infusion-therapy {
+        padding: 40px 0;
+    }
+
+    .infusion-therapy h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .therapy-grid {
+        gap: 20px;
+    }
+
+    .therapy-card {
+        padding: 20px;
+    }
+
+    .contact-block {
+        padding: 30px 20px;
+    }
+
+    .contact-block h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-block p {
+        font-size: 1rem;
+    }
+
+    .contact-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+} 
