@@ -353,7 +353,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 2px;
     background: linear-gradient(90deg, #4a90e2, #50c878);
 }
 
@@ -363,7 +363,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 2px;
     background: linear-gradient(90deg, #50c878, #4a90e2);
 }
 
@@ -391,21 +391,6 @@
 .final-motivation {
     background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
     margin-bottom: 0;
-}
-
-.final-motivation::before {
-    background: linear-gradient(90deg, #50c878, #4a90e2);
-    height: 2px;
-}
-
-.final-motivation::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, #4a90e2, #50c878);
 }
 
 .final-motivation p {
@@ -451,3 +436,25 @@
     margin-top: 40px;
 }
 
+.intro-section {
+    padding: 200px 0;
+    background: linear-gradient(rgba(239, 239, 239, 0.6), rgba(236, 236, 236, 0.98)), url('/img/background.jpg') no-repeat top center;
+    background-size: cover;
+    position: relative;
+}
+
+.location {
+    font-size: 1rem!important;
+    color:rgb(56, 81, 206)!important;
+    font-weight: 600!important;
+    letter-spacing: 1px!important;
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
